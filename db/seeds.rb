@@ -35,7 +35,7 @@ TodoList.create! [
 TodoItem.create! [
   { due_date: Date.today + 1.year, title: "Shopping", description: "Buy deoderant", 
   	todo_list_id: TodoList.find_by!(list_name: "CarlyTodo").id  },
-  { due_date: Date.today + 1.year, title: "Books to Read", description: "The Hobbit, 50 Shades", 
+  { due_date: Date.today + 1.year, title: "Books to Read", description: "The Hobbit, How to Win Friends", 
   	todo_list_id: TodoList.find_by!(list_name: "CarlyTodo").id  },
   { due_date: Date.today + 1.year, title: "Place to Visit", description: "I should tour the White House someday.", 
   	todo_list_id: TodoList.find_by!(list_name: "CarlyTodo").id  },
@@ -61,7 +61,7 @@ TodoItem.create! [
 TodoItem.create! [
   { due_date: Date.today + 1.year, title: "Shopping", description: "Buy deoderant", 
   	todo_list_id: TodoList.find_by!(list_name: "BenTodo").id  },
-  { due_date: Date.today + 1.year, title: "Books to Read", description: "The Hobbit, 50 Shades", 
+  { due_date: Date.today + 1.year, title: "Books to Read", description: "The Hobbit, The Bible", 
   	todo_list_id: TodoList.find_by!(list_name: "BenTodo").id  },
   { due_date: Date.today + 1.year, title: "Place to Visit", description: "I should tour the White House someday.", 
   	todo_list_id: TodoList.find_by!(list_name: "BenTodo").id  },
@@ -74,7 +74,7 @@ TodoItem.create! [
 TodoItem.create! [
   { due_date: Date.today + 1.year, title: "Shopping", description: "Buy deoderant", 
   	todo_list_id: TodoList.find_by!(list_name: "HillaryTodo").id  },
-  { due_date: Date.today + 1.year, title: "Books to Read", description: "The Hobbit, 50 Shades", 
+  { due_date: Date.today + 1.year, title: "Books to Read", description: "The Hobbit, How to be a Man", 
   	todo_list_id: TodoList.find_by!(list_name: "HillaryTodo").id  },
   { due_date: Date.today + 1.year, title: "Place to Visit", description: "I should tour the White House someday.", 
   	todo_list_id: TodoList.find_by!(list_name: "HillaryTodo").id  },
