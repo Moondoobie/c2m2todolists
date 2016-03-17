@@ -1,4 +1,4 @@
-## Assignment for Module #2: Active Record Relationships
+
 
 The overall goal of this assignment is to assess your ability to implement and use Active Record model relationships. 
 This includes:
