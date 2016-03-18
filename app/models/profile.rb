@@ -18,5 +18,13 @@ class Profile < ActiveRecord::Base
   		errors.add(:first_name, "A man's name cannot be Sue")
   	end
   end
+
+  def get_all_profiles(min_yr, max_yr)
+    #Profile.where("birth_year BETWEEN ? AND ?", min, max).order(birth_year: :asc).to_a    
+     Profile.where("birth_year BETWEEN :min_birth_yr AND :max_birth_yr", min_birth_yr: min_yr, max_birth_yr: max_yr).order(birth_year: :asc).to_a 
+  end
   
 end
+
+# returns a collection of Profiles in ASC birth year order
+#Person.where("age BETWEEN ? AND ?", 28, 34).to_a

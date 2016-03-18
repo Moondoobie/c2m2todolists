@@ -7,15 +7,9 @@ class User < ActiveRecord::Base
 
 
 	def get_completed_count
-	  User.todo_items.where(completed: "true").count
-	  # returns the count
+      todo_items.where(completed: true).count
 	end
 
 end
 
-
-#determines the number of TodoItems the User has completed using an aggregate query function
-
-#(Hint: You are looking for the count of TodoItems associated with a specific User where
-#completed:true)
 
