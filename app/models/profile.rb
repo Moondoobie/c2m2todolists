@@ -13,15 +13,15 @@ class Profile < ActiveRecord::Base
   	end
   end
 
+  def self.get_all_profiles (min, max)
+    Profile.where("birth_year BETWEEN ? AND ?", min, max).order(:birth_year).to_a    
+    #Profile.where("birth_year BETWEEN :min_birth_yr AND :max_birth_yr", min_birth_yr: min_yr, max_birth_yr: max_yr).order(:birth_year).to_a 
+  end
+
   def man_cannot_be_sue
   	if (gender == "male" && first_name == "Sue")
   		errors.add(:first_name, "A man's name cannot be Sue")
   	end
-  end
-
-  def get_all_profiles(min_yr, max_yr)
-    #Profile.where("birth_year BETWEEN ? AND ?", min, max).order(birth_year: :asc).to_a    
-     Profile.where("birth_year BETWEEN :min_birth_yr AND :max_birth_yr", min_birth_yr: min_yr, max_birth_yr: max_yr).order(birth_year: :asc).to_a 
   end
   
 end
